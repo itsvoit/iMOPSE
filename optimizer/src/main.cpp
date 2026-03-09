@@ -1,5 +1,6 @@
 #include <iostream> // Standard I/O library
 #include <random> // Library for random number generation
+#include <string>
 #include "SProgramParams.h" // Custom header file for program parameters structure
 #include "CProgram.h" // Custom header file for the main program class
 #include "utils/logger/CExperimentLogger.h" // Custom header for an experiment logger utility class
@@ -17,7 +18,7 @@ static const int DEFAULT_EXECUTIONS_NUMBER = 1; // Default number of executions 
 
 void showErrorAndExit(const char *message, const char *detail = ""); // Function prototype for error handling
 
-int main(int argc, char *argv[])
+int imopse_main(int argc, char* argv[])
 {
     // Check for minimum number of arguments
     if (argc < MIN_REQUIRED_ARGS)
